@@ -1,6 +1,6 @@
 # Outside, briefly
 
-An offline-first outdoor mission planner built for the [Hacktoberfest Open-Source AI Challenge: Week 1](https://dev.to/challenges/hacktoberfest-week1-2026-10-05). Write a short sentence about what you want to do. A local, transparent text classifier picks one of four mission types: notice, move, care, or connect. The app then generates a short plan that encourages you to put the screen away.
+An offline-first outdoor mission planner built for the [Hacktoberfest Open-Source AI Challenge: Week 1](https://dev.to/challenges/hacktoberfest-week1-2026-10-05). [Try the live demo](https://ankitpandit120.github.io/outside-briefly/). Write a short sentence about what you want to do. A local, transparent text classifier picks one of four mission types: notice, move, care, or connect. The app then generates a short plan that encourages you to put the screen away.
 
 ## Run
 
@@ -20,4 +20,4 @@ The service worker caches the app shell on first successful visit. Test by loadi
 
 ## Challenge entry status
 
-The app and article draft are ready locally. A public repository URL, live demo URL, and real outdoor test notes must be added to the submission before publication. See [`submission-draft.md`](submission-draft.md).
+The app is public and its article is saved as a DEV draft. Outdoor testing has not been claimed. See [`submission-draft.md`](submission-draft.md).

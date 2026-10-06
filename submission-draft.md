@@ -12,11 +12,11 @@ It offers four kinds of mission: noticing nature, moving, caring for a place, an
 
 ## Demo
 
-<!-- Add a public HTTPS demo URL or short demo video before publishing. -->
+[Try the live demo](https://ankitpandit120.github.io/outside-briefly/). Type “I want a peaceful walk with birds and trees” to see a noticing mission.
 
 ## Code
 
-<!-- Add the public GitHub repository URL before publishing. -->
+[View the MIT-licensed source code](https://github.com/AnkitPandit120/outside-briefly).
 
 ## How I Built It
 
@@ -30,7 +30,7 @@ The model, training examples, and mission rules are all in the public code. Anyo
 
 ## What Happened Outdoors
 
-<!-- Add a real test here: where you tried the mission, what it recommended, what worked, and what you would improve. Do not invent results. -->
+I tested all four model intents and the 10-minute accessible mission in the browser and in automated tests. I have not yet taken a mission outside, so I cannot claim an outdoor field test.
 
 ## Prize Categories
 
