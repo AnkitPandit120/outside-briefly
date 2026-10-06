@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#e8eddf">
+  <meta name="description" content="An offline, private outdoor mission planner powered by a tiny open-source language model.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <title>Outside, briefly — an offline outdoor companion</title>
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar"><a class="brand" href="#top"><span class="brand-mark">✳</span> outside, briefly</a><span class="offline-pill" id="status">Ready for the outdoors</span></header>
+    <main id="top">
+      <section class="hero" aria-labelledby="headline">
+        <div class="eyebrow">A tiny local AI companion <span class="line"></span> Made for real life</div>
+        <h1 id="headline">Less screen.<br><em>More outside.</em></h1>
+        <p class="lead">Tell us how you feel. A small, open text classifier turns it into a simple mission you can take outdoors—then you can put your phone away.</p>
+        <div class="hero-note"><span>01 / PLAN</span><span>02 / GO</span><span>03 / NOTICE</span></div>
+        <div class="sun" aria-hidden="true"><span></span></div>
+      </section>
+
+      <section class="planner" aria-labelledby="planner-title">
+        <div class="section-heading"><p class="kicker">YOUR NEXT LITTLE ADVENTURE</p><h2 id="planner-title">What sounds good today?</h2><p>Write a few words. The model reads them on your device.</p></div>
+        <form id="mission-form">
+          <label for="intent">What are you in the mood for?</label>
+          <textarea id="intent" rows="3" maxlength="300" placeholder="I feel restless and want a peaceful walk with birds and trees..." required></textarea>
+          <div class="form-row">
+            <div><label for="minutes">Time available</label><select id="minutes"><option value="10">10 minutes</option><option value="15" selected>15 minutes</option><option value="30">30 minutes</option><option value="45">45 minutes</option></select></div>
+            <label class="check"><input type="checkbox" id="accessible"><span>Use an accessible spot or seated option</span></label>
+          </div>
+          <button type="submit">Find my outside mission <span aria-hidden="true">↗</span></button>
+          <p class="privacy">✳ Your words stay in this browser. No account, location tracking, or API call.</p>
+        </form>
+      </section>
+
+      <section id="result" class="result hidden" aria-live="polite"></section>
+      <section class="about"><p class="kicker">HOW IT WORKS</p><h2>Small enough to take anywhere.</h2><div class="about-grid"><div><span>01</span><h3>Open model</h3><p>A transparent Naive Bayes classifier learns from included examples and matches your words to a kind of outing.</p></div><div><span>02</span><h3>Fully local</h3><p>The model, missions, and interface are in this tiny app. After your first visit, the service worker keeps them ready offline.</p></div><div><span>03</span><h3>Back to life</h3><p>The result is a short plan—not an endless feed. Read it, head out, and return only if you want to reflect.</p></div></div></section>
+    </main>
+    <footer><span>Made for the Hacktoberfest “Touch Grass” challenge.</span><a href="https://dev.to/challenges/hacktoberfest-week1-2026-10-05">About the challenge ↗</a></footer>
+  </div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
