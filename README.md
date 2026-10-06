@@ -20,4 +20,4 @@ The service worker caches the app shell on first successful visit. Test by loadi
 
 ## Challenge entry status
 
-The app is public and its article is saved as a DEV draft. Outdoor testing has not been claimed. See [`submission-draft.md`](submission-draft.md).
+The app is public and its [DEV challenge article](https://dev.to/techsfc/outside-briefly-a-tiny-offline-ai-coach-for-getting-off-the-screen-6ef) is published. Outdoor testing has not been claimed. The article source is in [`submission-draft.md`](submission-draft.md).

@@ -10,7 +10,7 @@ I built **Outside, briefly**, a small outdoor activity planner. You describe you
 
 I noticed a problem with many wellness apps: even when they encourage a walk, they ask you to keep checking the phone. I wanted the planning step to end quickly. The result gives you a handful of concrete steps and a question to think about when you return. You can print or save the mission card and leave the browser behind.
 
-It offers four kinds of mission: noticing nature, moving, caring for a place, and connecting with someone. There is an accessible or seated option. A printable card lets you leave the browser behind.
+It offers four kinds of mission: noticing nature, moving, caring for a place, and connecting with someone. There is an accessible or seated option.
 
 ## Demo
 
@@ -28,14 +28,14 @@ The AI core is a transparent, locally trained multinomial Naive Bayes classifier
 
 For instance, words such as “birds,” “trees,” and “listen” point toward **notice**; “water,” “plants,” and “garden” point toward **care**. The model is the core decision-maker. Mission steps are written by a human so they remain short, practical, and bounded. If the sentence is vague, the app still makes a best guess and lets you try again.
 
-~~~mermaid
+```mermaid
 flowchart LR
   A[Your sentence] --> B[Local word tokenizer]
   B --> C[Open Naive Bayes model]
   C --> D[Mission type]
   D --> E[Time and access adjustments]
   E --> F[Short mission card]
-~~~
+```
 
 The app is plain HTML, CSS, and JavaScript with no build step or API key. A service worker caches its files after the first visit, allowing the same flow to work offline. There is no geolocation request, analytics call, or account. The initial visit still needs a connection so the browser can download the files; I did not want to imply otherwise.
 
